@@ -74,7 +74,7 @@ const Cart = () => {
             </p>
           </div>
           <p className="font-titleFont font-semibold flex justify-between mt-6">
-            Total <span className="text-xl font-bold">${totalAmt}</span>
+            Total <span className="text-xl font-bold">Rs.{totalAmt + 300}</span>
           </p>
           <button
             onClick={handleCheckout}
@@ -89,7 +89,7 @@ const Cart = () => {
                 name="Fast Fashion Online Shopping"
                 amount={totalAmt * 100}
                 label="Pay to FastFashion"
-                description={`Your Payment amount is $${totalAmt}`}
+                description={`Your Payment amount is Rs.${totalAmt + 400}`}
                 token={payment}
                 email={userInfo.email}
               />
